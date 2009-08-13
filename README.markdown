@@ -1,6 +1,7 @@
-A place to store git hooks
+Git hooks and an installer script. Install hooks on a per-project basis.
 
+Installer usage: `ruby script/hookify ~/path/to/project`. Verify the hooks were installed by checking the `.git/hooks` directory for the project.
 
-Installation script from [edouard](http://github.com/edouard), installs hooks to .git/hooks by specifying project directory
+The hookify script is from [edouard](http://github.com/edouard).
 
 You may need to `chmod +x script/hookify`
