@@ -1,8 +1,9 @@
 #!/usr/bin/env ruby
 
-# pre-commit hook for Rails app to look for bad strings that shouldn't be checked in
-# Copyright (c) 2009 Andy Atkinson
-bad_strings = %w(debugger console)
+# pre-commit hook for Rails apps to look for bad strings that shouldn't be checked in
+# Copyright (c) Andy Atkinson
+
+bad_strings = %w(debugger console binding.pry)
 raw_results = ''
 bad_strings.each{|s| raw_results += `find * -exec grep -l '#{s}' {} \\;`}
 results = raw_results.split.reject{|w| w.match(/vendor|log|script\//)} # ignore certain rails dirs
