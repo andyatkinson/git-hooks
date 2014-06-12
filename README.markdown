@@ -1,6 +1,6 @@
 ### Git hooks
 
-Git repositories have a `hooks` directory that can be modofied for a given repository. This project adds a way to install and remove hooks for a project. The project has a couple example hooks.
+Git repositories have a `hooks` directory that can be modified for a given repository. This project adds a way to install and remove hooks for a project. The project has a couple example hooks.
 
 #### Example hooks
 
